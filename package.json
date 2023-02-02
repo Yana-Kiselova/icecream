@@ -1,5 +1,5 @@
 {
-  "name": "parcel-project-template",
+  "name": "icecream",
   "version": "2.0.0",
   "description": "",
   "homepage": "https://Yana-Kiselova.github.io/icecream",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/Yana-Kiselova/icecream.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",

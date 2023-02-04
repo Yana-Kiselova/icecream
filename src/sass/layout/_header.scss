@@ -1,0 +1,22 @@
+.header {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: #ffb8ca;
+}
+
+.header-menu-list,
+.button {
+  display: none;
+}
+
+.button-menu {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.button-burger-icon {
+  width: 20px;
+  height: 12px;
+  fill: #d41443;
+}

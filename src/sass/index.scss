@@ -1,8 +1,10 @@
 @import './example';
 
-@import './base/common';
-@import './base/container';
+@import './base/_common';
+@import './base/_container';
 
-@import './utils/variables';
+@import './components/_button';
 
-@import './layout/header';
+@import './utils/_variables';
+
+@import './layout/_header';

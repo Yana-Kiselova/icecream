@@ -2,34 +2,65 @@
   <div class="container">
     <img src="../images/logo.png" alt="logo" />
     <nav class="header-menu">
-      <ul class="header-menu-list">
+      <ul class="header-menu-list list">
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Home</a>
+          <a class="header-menu-link link active" href="">Home</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">About us</a>
+          <a class="header-menu-link link" href="">About us</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">How it’s made?</a>
+          <a class="header-menu-link link" href="">How it’s made?</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Our products</a>
+          <a class="header-menu-link link" href="">Our products</a>
         </li>
         <li class="header-menu-item">
-          <a class="header-menu-link" href="">Contact</a>
+          <a class="header-menu-link link" href="">Contact</a>
         </li>
       </ul>
     </nav>
-    <button class="button">
-      Buy now
-      <svg>
-        <use href="../images/sprait/symbol-defs.svg#icon-Vector-1-1"></use>
-      </svg>
-    </button>
-    <button class="button-menu">
+    <button type="button" class="button-menu" data-menu-button>
       <svg class="button-burger-icon">
         <use href="../images/sprait/symbol-defs.svg#icon-Burger-2"></use>
       </svg>
     </button>
+    <button type="button" class="button button-header">
+      Buy now
+      <svg class="button-header-icon">
+        <use href="../images/sprait/symbol-defs.svg#icon-Vector-1-1"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="menu-mobile" data-menu>
+    <button type="button" class="button-menu-close" data-menu-close>
+      <svg class="button-burger-icon-close">
+        <use href="../images/sprait/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <button type="button" class="button button-header-menu">Buy now
+        <svg class="button-header-icon">
+        <use href="../images/sprait/symbol-defs.svg#icon-Vector-1-1"></use>
+      </svg>
+    </button>
+      <ul class="menu-mobile-list list">
+        <li class="menu-mobile-item">
+          <a class="menu-mobile-link link active" href="">Home</a>
+        </li>
+        <li class="menu-mobile-item">
+          <a class="menu-mobile-link link" href="">About us</a>
+        </li>
+        <li class="menu-mobile-item">
+          <a class="menu-mobile-link link" href="">How it’s made?</a>
+        </li>
+        <li class="menu-mobile-item">
+          <a class="menu-mobile-link link" href="">Our products</a>
+        </li>
+        <li class="menu-mobile-item">
+          <a class="menu-mobile-link link" href="">Contact</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </header>

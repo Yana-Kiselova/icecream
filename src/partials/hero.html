@@ -1,40 +1,44 @@
-<section>
-  <picture>
-    <source
-      srcset="
-        ../images/hero/hero-img-1-desctop.webp    1x,
-        ../images/hero/hero-img-1-desctop@2x.webp 2x
-      "
-      media="(min-width:1200px)"
-      type="image/webp"
-    />
-    <source
-      srcset="../images/hero/hero-img-1-desctop.png 1x, ../images/hero/hero-img-1-desctop@2x.png 2x"
-      media="(min-width:1200px)"
-    />
-    <source
-      srcset="../images/hero/hero-img-1-tablet.webp 1x, ../images/hero/hero-img-1-tablet@2x.webp 2x"
-      media="(min-width:768px)"
-      type="image/webp"
-    />
-    <source
-      srcset="../images/hero/hero-img-1-tablet.png 1x, ../images/hero/hero-img-1-tablet@2x.png 2x"
-      media="(min-width:768px)"
-    />
-    <source
-      srcset="../images/hero/hero-img-1-mobile.webp 1x, ../images/hero/hero-img-1-mobile@2x.webp 2x"
-      media="(min-width:320px)"
-      type="image/webp"
-    />
-    <source
-      srcset="../images/hero/hero-img-1-mobile.png 1x, ../images/hero/hero-img-1-mobile@2x.png 2x"
-      media="(min-width:320px)"
-    />
-    <img src="../images/hero/hero-img-1-mobile.png" alt="мороженное рожок" />
-  </picture>
-  <div>
-    <h1>ice cream made with <span>passion</span></h1>
+<section class="hero">
+  <div class="container">
+    <picture>
+      <source
+        srcset="
+          ./images/hero/hero-img-1-desctop.webp    1x,
+          ./images/hero/hero-img-1-desctop@2x.webp 2x
+        "
+        media="(min-width:1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/hero-img-1-desctop.png 1x, ./images/hero/hero-img-1-desctop@2x.png 2x"
+        media="(min-width:1200px)"
+      />
+      <source
+        srcset="./images/hero/hero-img-1-tablet.webp 1x, ./images/hero/hero-img-1-tablet@2x.webp 2x"
+        media="(min-width:768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/hero-img-1-tablet.png 1x, ./images/hero/hero-img-1-tablet@2x.png 2x"
+        media="(min-width:768px)"
+      />
+      <source
+        srcset="./images/hero/hero-img-1-mobile.webp 1x, ./images/hero/hero-img-1-mobile@2x.webp 2x"
+        media="(min-width:320px)"
+        type="image/webp"
+      />
+      <source
+        srcset="./images/hero/hero-img-1-mobile.png 1x, ./images/hero/hero-img-1-mobile@2x.png 2x"
+        media="(min-width:320px)"
+      />
+      <img class="hero-img" src="./images/hero/hero-img-1-mobile.png" alt="мороженное рожок" />
+    </picture>
+    <div class="title">
+      <h1 class="hero-title">ice cream made with<span class="hero-title-accent">passion</span></h1>
+    </div>
+    <div class="button-description">
+      <button class="button button-products" type="button">Products</button>
+      <button class="button button-making" type="button">How it’s made?</button>
+    </div>
   </div>
-  <button type="button">Products</button>
-  <button type="button">How it’s made?</button>
 </section>

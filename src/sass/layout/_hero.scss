@@ -1,0 +1,53 @@
+.hero {
+  padding-top: 27px;
+  background-color: #ffb8ca;
+  background-image: url(../images/hero/ellipse3.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.title {
+  width: 218px;
+}
+.hero-title {
+  margin-bottom: 19px;
+  text-align: start;
+  color: var(--light-color);
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  &-accent {
+    font-size: 48px;
+    line-height: 2;
+    color: var(--accent-color);
+  }
+}
+
+// .hero-img {
+//   position: absolute;
+//   bottom: 0px;
+//   right: 32px;
+// }
+
+.button-description {
+  display: flex;
+}
+.button-products {
+  min-width: 62px;
+  margin-right: 8px;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+.button-products,
+.button-making {
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+}
+.button-making {
+  min-width: 83px;
+}

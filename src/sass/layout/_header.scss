@@ -1,9 +1,9 @@
 .header {
+  z-index: 100;
   position: absolute;
   width: 100%;
   padding-top: 6px;
   padding-bottom: 6px;
-  background-color: #ffb8ca;
 }
 
 .header-menu-list,
@@ -84,6 +84,9 @@
 }
 
 @media (min-width: 768px) {
+  .header {
+    top: 31px;
+  }
   .button-header {
     display: block;
     padding: 10px 36px;

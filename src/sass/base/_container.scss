@@ -8,6 +8,10 @@
   align-items: center;
   justify-content: space-between;
 }
+.hero .container {
+  position: relative;
+  height: 502px;
+}
 
 @media (min-width: 320px) {
   .container {

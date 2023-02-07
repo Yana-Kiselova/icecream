@@ -1,16 +1,23 @@
 .hero {
-  padding-top: 27px;
   background-color: #ffb8ca;
   background-image: url(../images/hero/ellipse3.png);
   background-repeat: no-repeat;
   background-position: center right;
 }
-.title {
-  width: 218px;
+.hero-img {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
 }
-.hero-title {
-  margin-bottom: 19px;
-  text-align: start;
+
+.advantages {
+  position: absolute;
+  top: 193px;
+  max-width: 218px;
+}
+
+.hero-title,
+.hero-title-accent {
   color: var(--light-color);
   font-family: 'Titan One';
   font-weight: 400;
@@ -18,21 +25,14 @@
   line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
-  &-accent {
-    font-size: 48px;
-    line-height: 2;
-    color: var(--accent-color);
-  }
+}
+.hero-title-accent {
+  font-size: 48px;
+  color: var(--accent-color);
+  margin-bottom: 19px;
 }
 
-// .hero-img {
-//   position: absolute;
-//   bottom: 0px;
-//   right: 32px;
-// }
-
-.button-description {
+.button-advantages {
   display: flex;
 }
 .button-products {
@@ -43,6 +43,7 @@
 }
 .button-products,
 .button-making {
+  padding: 6px 15px;
   border-radius: 20px;
   font-weight: 400;
   font-size: 8px;

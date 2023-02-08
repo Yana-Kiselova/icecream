@@ -15,7 +15,8 @@
 }
 .hero-img-woman,
 .hero-img-milk,
-.hero-numbers {
+.hero-numbers,
+.hero-text {
   display: none;
 }
 
@@ -79,7 +80,7 @@
     position: absolute;
     display: block;
     left: 566px;
-    top: 266px;
+    bottom: 0;
   }
   .hero-img-milk {
     position: absolute;
@@ -91,14 +92,138 @@
     display: block;
     position: absolute;
     top: 94px;
-    left: 683px;
+    right: 34px;
+
+    &-item:not(:last-child) {
+      margin-bottom: 13px;
+    }
     &-text {
+      z-index: 1;
+      position: relative;
+      margin: 0px;
+      text-align: right;
       font-family: var(--accent-font);
       font-size: 28px;
       line-height: 1.14;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: var(--accent-color);
+      &::before {
+        z-index: -1;
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--light-color);
+      }
     }
+    &-desc {
+      margin-top: 0;
+      text-align: right;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      color: var(--light-color);
+
+      &:not(:first-child) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .hero-text {
+    position: absolute;
+    top: 292px;
+    left: 154px;
+    display: block;
+    max-width: 114px;
+
+    &-core {
+      margin-bottom: 7px;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+      color: var(--light-color);
+    }
+    &-btn {
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background-color: var(--light-color);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .hero-img-ellipse {
+    left: 475px;
+    top: 52px;
+  }
+  .hero-img-icecream {
+    left: 594px;
+    top: 108px;
+  }
+  .title-wrapper {
+    left: 115px;
+    top: 171px;
+  }
+  .hero-img-woman {
+    left: 878px;
+  }
+  .hero-img-milk {
+    left: 77px;
+    top: 429px;
+  }
+  .hero-numbers {
+    top: 156px;
+    right: 97px;
+
+    &-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &-text {
+      font-size: 46px;
+      line-height: 1.15;
+      &::before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &-desc {
+      font-size: 14px;
+      line-height: 1.28px;
+    }
+  }
+  .hero-text {
+    top: 485px;
+    left: 295px;
+    max-width: 200px;
+
+    &-core {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+  .title-wrapper {
+    max-width: 277px;
+  }
+  .hero-title {
+    font-size: 38px;
+    &-accent {
+      font-size: 58px;
+      margin-bottom: 25px;
+    }
+  }
+  .button-products,
+  .button-making {
+    padding: 11px 22px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .button-products {
+    margin-right: 17px;
   }
 }

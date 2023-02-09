@@ -1,17 +1,22 @@
 .container {
   padding-left: 20px;
   padding-right: 20px;
-}
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   width: 100%;
+
+  .header & {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .hero & {
+    position: relative;
+    height: 502px;
+  }
 }
 
 @media (min-width: 320px) {
   .container {
-    width: 480px;
+    width: 320px;
     margin: 0 auto;
   }
 }
@@ -21,11 +26,19 @@
     width: 768px;
     padding-left: 34px;
     padding-right: 34px;
+
+    .hero & {
+      height: 399px;
+    }
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
+
+    .hero & {
+      height: 665px;
+    }
   }
 }

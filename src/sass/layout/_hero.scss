@@ -1,0 +1,229 @@
+.hero {
+  background-color: #ffb8ca;
+  overflow: hidden;
+}
+
+.hero-img-ellipse {
+  position: absolute;
+  top: 83px;
+  left: 36px;
+}
+.hero-img-icecream {
+  position: absolute;
+  bottom: 0;
+  right: 32px;
+}
+.hero-img-woman,
+.hero-img-milk,
+.hero-numbers,
+.hero-text {
+  display: none;
+}
+
+.title-wrapper {
+  position: absolute;
+  left: 20px;
+  top: 193px;
+  max-width: 218px;
+}
+
+.hero-title,
+.hero-title-accent {
+  color: var(--light-color);
+  font-family: 'Titan One';
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.hero-title-accent {
+  font-size: 48px;
+  color: var(--accent-color);
+  margin-bottom: 19px;
+}
+.hero-buttons-list {
+  display: flex;
+}
+.button-products {
+  min-width: 62px;
+  margin-right: 8px;
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+.button-products,
+.button-making {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+}
+.button-making {
+  min-width: 83px;
+}
+
+@media (min-width: 768px) {
+  .hero-img-ellipse {
+    left: 307px;
+    top: 31px;
+  }
+  .hero-img-icecream {
+    left: 378px;
+    top: 63px;
+  }
+  .title-wrapper {
+    left: 34px;
+    top: 102px;
+  }
+  .hero-img-woman {
+    position: absolute;
+    display: block;
+    left: 566px;
+    bottom: 0;
+  }
+  .hero-img-milk {
+    position: absolute;
+    display: block;
+    left: 34px;
+    top: 258px;
+  }
+  .hero-numbers {
+    display: block;
+    position: absolute;
+    top: 94px;
+    right: 34px;
+
+    &-item:not(:last-child) {
+      margin-bottom: 13px;
+    }
+    &-text {
+      z-index: 1;
+      position: relative;
+      margin: 0px;
+      text-align: right;
+      font-family: var(--accent-font);
+      font-size: 28px;
+      line-height: 1.14;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      &::before {
+        z-index: -1;
+        position: absolute;
+        top: -6px;
+        right: -6px;
+        content: '';
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: var(--light-color);
+      }
+    }
+    &-desc {
+      margin-top: 0;
+      text-align: right;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.25;
+      color: var(--light-color);
+
+      &:not(:first-child) {
+        margin-bottom: 0px;
+      }
+    }
+  }
+  .hero-text {
+    position: absolute;
+    top: 292px;
+    left: 154px;
+    display: block;
+    max-width: 114px;
+
+    &-core {
+      margin-bottom: 7px;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 1.5;
+      color: var(--light-color);
+    }
+    &-btn {
+      padding: 0;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background-color: var(--light-color);
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .hero-img-ellipse {
+    left: 475px;
+    top: 52px;
+  }
+  .hero-img-icecream {
+    left: 594px;
+    top: 108px;
+  }
+  .title-wrapper {
+    left: 115px;
+    top: 171px;
+  }
+  .hero-img-woman {
+    left: 878px;
+  }
+  .hero-img-milk {
+    left: 77px;
+    top: 429px;
+  }
+  .hero-numbers {
+    top: 156px;
+    right: 97px;
+
+    &-item:not(:last-child) {
+      margin-bottom: 15px;
+    }
+    &-text {
+      font-size: 46px;
+      line-height: 1.15;
+      &::before {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &-desc {
+      font-size: 14px;
+      line-height: 1.28px;
+    }
+  }
+  .hero-text {
+    top: 485px;
+    left: 295px;
+    max-width: 200px;
+
+    &-core {
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 1.4;
+    }
+  }
+  .title-wrapper {
+    max-width: 277px;
+  }
+  .hero-title {
+    font-size: 38px;
+    &-accent {
+      font-size: 58px;
+      margin-bottom: 25px;
+    }
+  }
+  .button-products,
+  .button-making {
+    padding: 11px 22px;
+    font-size: 14px;
+    line-height: 1.28;
+  }
+  .button-products {
+    margin-right: 17px;
+  }
+}

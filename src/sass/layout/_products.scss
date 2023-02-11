@@ -1,0 +1,155 @@
+.products {
+  padding-top: 121px;
+  padding-bottom: 98px;
+
+  &-text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'Titan One';
+    font-size: 18px;
+    line-height: 1.16;
+    text-transform: uppercase;
+    color: var(--light-accent-color);
+  }
+
+  &-title {
+    text-align: center;
+    font-family: 'Titan One';
+    font-size: 34px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  }
+  &-img-icecream,
+  &-img-coffee,
+  &-img-milkshakes {
+    position: absolute;
+    top: -23%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &-icecream {
+    background-color: #ffb8ca;
+  }
+  &-coffee {
+    background-color: #f0d1a5;
+  }
+  &-milkshakes {
+    background-color: #c2e297;
+  }
+  &-cart {
+    position: relative;
+    margin-top: 113px;
+    padding: 161px 39px 41px 41px;
+    border-radius: 24px;
+
+    &-title {
+      margin-bottom: 30px;
+      font-family: 'Titan One';
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--light-color);
+    }
+    &-dot {
+      margin-bottom: 36px;
+      text-align: center;
+      font-family: 'Titan One';
+      font-size: 30px;
+      line-height: 0;
+      letter-spacing: 0.06em;
+      color: var(--light-color);
+      .products-cart-dot:not(:last-child) {
+        margin-bottom: 130px;
+      }
+    }
+    &-text-mob,
+    &-text {
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0.04em;
+      color: var(--light-color);
+    }
+    &-text {
+      display: none;
+    }
+
+    &-img {
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .products-text {
+    margin-bottom: 15px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  .products-title {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+  .products-cart {
+    position: relative;
+    margin-top: 150px;
+    padding: 152px 11px 40px 11px;
+    &-text-mob {
+      display: none;
+    }
+    &-text {
+      display: block;
+      margin-bottom: 40px;
+      line-height: 1.76;
+    }
+  }
+  .products-list {
+    display: flex;
+  }
+  .products-item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .products-img-icecream,
+  .products-img-coffee,
+  .products-img-milkshakes {
+    position: absolute;
+    top: -22%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .products-text {
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+  }
+  .products-title {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
+  .products-item:not(:last-child) {
+    margin-right: 24px;
+  }
+  .products-cart {
+    position: relative;
+    margin-top: 259px;
+    padding: 163px 49px 50px 49px;
+
+    &-text {
+      font-size: 16px;
+    }
+  }
+  .products-img-icecream,
+  .products-img-coffee,
+  .products-img-milkshakes {
+    top: -42%;
+  }
+}

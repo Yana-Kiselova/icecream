@@ -103,6 +103,7 @@
     &-text-mob {
       display: none;
     }
+
     &-text {
       display: block;
       margin-bottom: 40px;
@@ -119,7 +120,6 @@
   .products-img-icecream,
   .products-img-coffee,
   .products-img-milkshakes {
-    position: absolute;
     top: -22%;
   }
 }
@@ -139,11 +139,17 @@
     margin-right: 24px;
   }
   .products-cart {
-    position: relative;
     margin-top: 259px;
-    padding: 163px 49px 50px 49px;
-
+    width: 329px;
+    padding: 163px 44px 50px 44px;
+    &-title {
+      margin-bottom: 32px;
+    }
+    &-dot {
+      margin-bottom: 38px;
+    }
     &-text {
+      margin-bottom: 62px;
       font-size: 16px;
     }
   }

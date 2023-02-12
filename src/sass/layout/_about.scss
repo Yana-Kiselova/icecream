@@ -1,0 +1,230 @@
+.about {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 151px;
+  background-color: #fff5f6;
+
+  &-text {
+    margin-bottom: 15px;
+    font-family: var(--accent-font);
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--light-accent-color);
+  }
+  &-title {
+    margin-bottom: 26px;
+    font-family: var(--accent-font);
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  }
+  &-img {
+    margin-bottom: 46px;
+  }
+  &-bg {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    width: 100%;
+  }
+}
+.description {
+  display: flex;
+  flex-direction: column;
+}
+.about-description {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+  margin-bottom: 40px;
+  &-text,
+  &-text-light {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.62;
+  }
+  &-text-light {
+    margin-bottom: 10px;
+  }
+  &-text {
+    margin-bottom: 47px;
+  }
+  &-text-light {
+    color: #907e82;
+  }
+
+  &-button {
+    align-self: center;
+    margin-top: 7px;
+    height: 44px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+  &-button-icon {
+    width: 7px;
+    height: 8px;
+    margin-left: 16px;
+  }
+}
+
+.about-wrapper {
+  padding-right: 50px;
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+  }
+  &-item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+  .about-wrapper-img {
+    margin-bottom: 16px;
+  }
+  &-title {
+    padding-bottom: 20px;
+    font-family: var(--accent-font);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+  }
+  &-text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+}
+
+@media (min-width: 768px) {
+  .about {
+    padding-top: 130px;
+    padding-bottom: 246px;
+    &-text {
+      margin-bottom: 16px;
+      font-size: 26px;
+      line-height: 1.15;
+    }
+    &-title {
+      margin-bottom: 50px;
+      font-size: 48px;
+    }
+    &-description {
+      margin-top: 50px;
+      margin-bottom: 66px;
+    }
+    &-description-text-light,
+    &-description-text {
+      font-size: 14px;
+      line-height: 1.76;
+    }
+    &-description-button {
+      margin-top: 52px;
+      align-self: start;
+    }
+    &-bg {
+      display: none;
+    }
+    &-img {
+      margin-right: 17px;
+    }
+    &-wrapper-list {
+      flex-direction: row;
+    }
+    &-wrapper-item:not(:last-child) {
+      margin-right: 60px;
+    }
+    &-wrapper-item {
+      width: 180px;
+    }
+    &-wrapper-title {
+      font-size: 48px;
+      line-height: 1.14;
+      text-transform: none;
+    }
+    &-wrapper-text {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 1.74;
+    }
+  }
+  .description {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about {
+    padding-top: 125px;
+    padding-bottom: 310px;
+    &-text {
+      margin-bottom: 15px;
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &-title {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+    &-description {
+      z-index: 1;
+      padding: 0 74px;
+      margin-top: 55px;
+      margin-bottom: 39px;
+    }
+    &-description-text {
+      margin-bottom: 35px;
+      font-size: 16px;
+      line-height: 1.76;
+      letter-spacing: 0.04em;
+    }
+    &-description-text-light {
+      line-height: 1.94;
+      letter-spacing: 0.04em;
+    }
+    &-description-button {
+      margin-top: 35px;
+      align-self: start;
+    }
+    &-bg {gi
+      display: block;
+      top: 24%;
+      width: 100%;
+    }
+    &-img {
+      margin-right: 0px;
+    }
+    &-wrapper {
+      padding: 0 81px;
+    }
+    &-wrapper-list {
+      justify-content: space-around;
+    }
+
+    &-wrapper-item:not(:last-child) {
+      margin-right: 30px;
+    }
+    &-wrapper-item {
+      width: 330px;
+    }
+    .about-wrapper-img {
+      margin-bottom: 40px;
+    }
+
+    &-wrapper-title {
+      font-size: 58px;
+      line-height: 1.13;
+    }
+    &-wrapper-text {
+      font-size: 16px;
+      line-height: 1.76;
+    }
+  }
+}

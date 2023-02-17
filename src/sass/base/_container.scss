@@ -30,6 +30,10 @@
     .hero & {
       height: 399px;
     }
+    .coments & {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 

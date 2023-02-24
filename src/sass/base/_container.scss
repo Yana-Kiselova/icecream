@@ -12,6 +12,10 @@
     position: relative;
     height: 502px;
   }
+  .gallery & {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 320px) {

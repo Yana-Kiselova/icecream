@@ -57,19 +57,6 @@
   &-text-light {
     color: #907e82;
   }
-
-  &-button {
-    align-self: center;
-    margin-top: 7px;
-    height: 44px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
-  &-button-icon {
-    width: 7px;
-    height: 8px;
-    margin-left: 16px;
-  }
 }
 
 .about-wrapper {
@@ -124,10 +111,7 @@
       font-size: 14px;
       line-height: 1.76;
     }
-    &-description-button {
-      margin-top: 52px;
-      align-self: start;
-    }
+
     &-bg {
       display: none;
     }
@@ -188,10 +172,6 @@
     &-description-text-light {
       line-height: 1.94;
       letter-spacing: 0.04em;
-    }
-    &-description-button {
-      margin-top: 35px;
-      align-self: start;
     }
     &-bg {
       display: block;

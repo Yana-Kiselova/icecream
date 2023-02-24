@@ -1,6 +1,7 @@
 .contacts {
   padding-bottom: 113px;
   background: linear-gradient(to bottom, #ffffff 7%, #fff5f6 7%);
+
   &-list {
     display: flex;
     flex-direction: column;
@@ -69,31 +70,6 @@
     border-top: 1px solid #e1e1e1;
     border-bottom: 1px solid #e1e1e1;
   }
-  &-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 54px;
-  }
-}
-.contacts-button-accent {
-  margin-bottom: 10px;
-  background-color: #d41342;
-  color: #ffffff;
-  padding: 12px 12px;
-  min-width: 161px;
-}
-.contacts-button-accent .button-icon {
-  margin-left: 8px;
-  fill: var(--light-color);
-}
-.contacts-button-light .button-icon {
-  margin-left: 13px;
-}
-
-.contacts-button-light {
-  padding: 12px 29px;
-  min-width: 161px;
 }
 
 @media (min-width: 768px) {
@@ -146,33 +122,24 @@
       margin-top: 30px;
       margin-bottom: 30px;
     }
-    &-button {
-      flex-direction: row;
-      justify-content: center;
-      margin-top: 81px;
-    }
-  }
-  .contacts-button-accent {
-    padding-left: 30px;
-    padding-right: 34px;
-    min-width: 191px;
-    margin-bottom: 0px;
-    margin-right: 14px;
-  }
-  .button-icon .contacts-button-accent {
-    margin-left: 13px;
-  }
-  .contacts-button-light {
-    padding-left: 38px;
-    padding-right: 38px;
-    min-width: 174px;
   }
 }
 
 @media (min-width: 1200px) {
   .contacts {
     padding-bottom: 165px;
-
+    background-image: url('../images/contacts/contacts-sectionbg-desctop.png'),
+      linear-gradient(to bottom, #ffffff 11%, #fff5f6 11%);
+    background-repeat: no-repeat;
+    background-position-y: 20%;
+    background-size: contain;
+    &-list {
+      margin-right: 81px;
+      margin-left: 81px;
+    }
+    &-list:not(:last-child) {
+      margin-right: 30px;
+    }
     &-item {
       padding: 51px 44px 62px 43px;
       min-width: 330px;
@@ -200,22 +167,6 @@
       padding-bottom: 32px;
       margin-top: 32px;
       margin-bottom: 32px;
-    }
-    &-button {
-      margin-top: 86px;
-    }
-
-    .contacts-button-accent {
-      padding-left: 35px;
-      padding-right: 36px;
-      margin-right: 15px;
-    }
-    .button-icon .contacts-button-accent {
-      margin-left: 16px;
-    }
-    .contacts-button-light {
-      padding-left: 40px;
-      padding-right: 40px;
     }
   }
 }

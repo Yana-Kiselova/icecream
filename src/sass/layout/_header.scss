@@ -61,13 +61,6 @@
   color: var(--accent-color);
 }
 
-.button-header-menu {
-  align-self: center;
-  min-width: 209px;
-  padding: 12px 49px;
-  margin-bottom: 32px;
-}
-
 .button-burger-icon-close {
   position: absolute;
   right: 28px;
@@ -79,12 +72,9 @@
 
 @media (min-width: 768px) {
   .header {
-    top: 31px;
+    padding-top: 36px;
   }
-  .button-header {
-    display: block;
-    padding: 12px 34px;
-  }
+
   .button-menu {
     margin-left: auto;
     margin-right: 30px;
@@ -94,12 +84,15 @@
     padding-bottom: 34px;
     padding-left: 34px;
   }
-  .button-header-menu {
-    min-width: 186px;
-  }
 }
 
 @media (min-width: 1200px) {
+  .header {
+    position: fixed;
+    padding-top: 38px;
+    background-color: rgba(255, 184, 202, 0.5);
+  }
+
   .header-menu-list {
     display: flex;
   }

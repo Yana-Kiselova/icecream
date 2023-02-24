@@ -43,22 +43,10 @@
 }
 .hero-buttons-list {
   display: flex;
+  align-items: center;
 }
-.button-products {
-  min-width: 62px;
-  margin-right: 8px;
-  background-color: var(--accent-color);
-  color: var(--light-color);
-}
-.button-products,
-.button-making {
-  padding: 6px 15px;
-  border-radius: 20px;
-  font-size: 8px;
-  line-height: 1.25;
-}
-.button-making {
-  min-width: 83px;
+.hero-buttons-item {
+  padding: 11px 0;
 }
 
 @media (min-width: 768px) {
@@ -212,14 +200,5 @@
       font-size: 58px;
       margin-bottom: 25px;
     }
-  }
-  .button-products,
-  .button-making {
-    padding: 11px 22px;
-    font-size: 14px;
-    line-height: 1.28;
-  }
-  .button-products {
-    margin-right: 17px;
   }
 }

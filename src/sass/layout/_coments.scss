@@ -1,103 +1,300 @@
-.coments {
+.customer-reviews {
   padding-top: 80px;
   padding-bottom: 86px;
-  &-img {
-    margin: 0 auto;
-    margin-bottom: 29px;
-  }
-  &-wrapper {
-    position: relative;
-    padding: 43px 66px 26px 57px;
-    background-color: #fafafa;
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 121px;
+      padding-bottom: 119px;
+    }
   }
 
-  &-wrapper-img {
-    z-index: 0;
-    position: absolute;
-    top: 28px;
-    left: 61px;
-  }
-  &-text {
-    position: relative;
-    z-index: 1;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.55;
-    text-align: center;
-  }
-  &-wrapper-dot {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-  &-dot {
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #c7133e;
-  }
-  &-dot:not(:last-child) {
-    margin-right: 10px;
-  }
-  &-user-name {
-    text-align: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.86;
+  @media screen and (min-width: 1280px) {
+    & {
+      padding-top: 123px;
+      padding-bottom: 132px;
+    }
   }
 }
 
-@media (min-width: 768px) {
-  .coments {
-    padding-top: 121px;
-    padding-bottom: 197px;
-    &-img {
-      margin-bottom: 19px;
+.slide-reviews {
+  margin: 0 auto;
+  //outline: 1px solid rgb(36, 211, 124);
+
+  @media screen and (max-width: 767px) {
+    & {
+      width: 280px;
     }
-    &-wrapper {
-      align-self: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
       width: 620px;
-      padding: 47px 80px 34px 80px;
     }
+  }
 
-    &-wrapper-img {
-      top: 30px;
-      left: 40px;
-    }
-    &-text {
-      font-size: 14px;
-      line-height: 2.16;
-      letter-spacing: 0.04em;
-    }
-    &-user-name {
-      font-size: 16px;
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 926px;
     }
   }
 }
 
-@media (min-width: 1200px) {
-  .coments {
-    padding-top: 123px;
-    padding-bottom: 132px;
-    &-img {
+.slide-customer {
+  margin: 0 auto;
+  //outline: 1px solid rgb(36, 211, 124);
+
+  @media screen and (max-width: 767px) {
+    & {
+      width: 280px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      width: 620px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      width: 926px;
+    }
+  }
+}
+
+.slide-reviews__photo {
+  margin: 0 auto;
+
+  @media screen and (max-width: 767px) {
+    & {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
       margin-bottom: 15px;
     }
-    &-wrapper {
-      width: 926px;
-      padding: 32px 54px 32px 50px;
-    }
+  }
+}
 
-    &-wrapper-img {
-      top: 30px;
-      left: 40px;
+.slide-reviews__thumb {
+  margin: 0;
+  background-color: #fafafa;
+  //outline: 1px solid red;
+
+  @media screen and (max-width: 767px) {
+    & {
+      margin-bottom: 25px;
+      padding: 43px 60px 26px 60px;
     }
-    &-text {
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      margin-bottom: 24px;
+      padding: 30px 38px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      padding: 47px 50px 40px 50px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.slide-reviews__descrip {
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 0 auto;
+  position: relative;
+  z-index: 410;
+  //outline: 1px solid red;
+
+  @media screen and (max-width: 767px) {
+    & {
+      font-size: 12px;
+      line-height: 2.55;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      font-size: 14px;
+      line-height: 2.16;
+      padding: 0 27px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
       font-size: 16px;
       line-height: 1.86;
+      padding: 0 37px;
     }
-    &-user-name {
+  }
+}
+
+.slide-reviews__descrip::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -400;
+  //outline: 1px solid rgb(19, 85, 172);
+  @media screen and (max-width: 767px) {
+    & {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgb(250, 250, 250),
+        rgb(250, 250, 250) 29px,
+        rgb(225, 225, 225) 29px,
+        rgb(225, 225, 225) 30px
+      );
+      width: 180px;
+      height: 240px;
+      top: 0;
+      left: -7px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgb(250, 250, 250),
+        rgb(250, 250, 250) 29px,
+        rgb(225, 225, 225) 29px,
+        rgb(225, 225, 225) 30px
+      );
+      width: 524px;
+      height: 115px;
+      top: 0;
+      left: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        rgb(250, 250, 250),
+        rgb(250, 250, 250) 28px,
+        rgb(225, 225, 225) 28px,
+        rgb(225, 225, 225) 29px
+      );
+      width: 822px;
+      height: 80px;
+      top: 0;
+      left: 7px;
+    }
+  }
+}
+
+.slide-reviews__descrip::after {
+  content: '';
+  background-image: url(../images/coments/coments-brackets.png);
+  background-repeat: no-repeat;
+  width: 54px;
+  height: 40px;
+  position: absolute;
+  top: -15px;
+  left: 0px;
+  z-index: -100;
+}
+
+/*.slick-dots li.slick-active button:before {
+  color: #c7133e;
+}*/
+
+.slide-customer__name {
+  font-weight: 500;
+  line-height: 1.86;
+  text-align: center;
+  margin-bottom: 21px;
+  //outline: 1px solid rgb(112, 36, 211);
+
+  @media screen and (max-width: 1279px) {
+    & {
+      margin-left: 40px;
+      margin-right: 40px;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    & {
       font-size: 20px;
     }
   }
+}
+
+// Стили пагинации
+// Пагинация под отзывом
+.slide-reviews .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.slide-reviews .slick-dots button {
+  background: #c7133e;
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 4px;
+  width: 4px;
+  margin: 5px;
+  outline: none;
+  padding: 0;
+
+  cursor: pointer;
+}
+
+.slide-reviews .slick-active button {
+  background: #c7133e;
+}
+
+// Пагинация под именем
+
+.slide-customer .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.slide-customer .slick-dots button {
+  background: #d9d9d9;
+  color: transparent;
+  border: none;
+  border-radius: 50%;
+  height: 12px;
+  width: 12px;
+  margin: 9px;
+  outline: none;
+
+  cursor: pointer;
+}
+
+.slide-customer .slick-active button {
+  width: 12px;
+  height: 12px;
+  border-radius: 0%;
+  background-color: transparent;
+  background-image: url(../images/coments/home.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

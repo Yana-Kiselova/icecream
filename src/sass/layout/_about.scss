@@ -1,7 +1,7 @@
 .about {
   position: relative;
   padding-top: 125px;
-  padding-bottom: 151px;
+  padding-bottom: 97px;
   background-color: #fff5f6;
 
   &-text {
@@ -92,7 +92,7 @@
 @media (min-width: 768px) {
   .about {
     padding-top: 130px;
-    padding-bottom: 246px;
+    padding-bottom: 140px;
     &-text {
       margin-bottom: 16px;
       font-size: 26px;
@@ -123,6 +123,7 @@
     }
     &-wrapper-item:not(:last-child) {
       margin-right: 60px;
+      margin-bottom: 0;
     }
     &-wrapper-item {
       width: 180px;
@@ -147,7 +148,7 @@
 @media (min-width: 1200px) {
   .about {
     padding-top: 125px;
-    padding-bottom: 310px;
+    padding-bottom: 139px;
     &-text {
       margin-bottom: 15px;
       font-size: 30px;
